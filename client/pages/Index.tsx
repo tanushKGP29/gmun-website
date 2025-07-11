@@ -103,7 +103,7 @@ export default function Index() {
                 About
               </a>
               <a
-                href="#events"
+                href="events"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 Events

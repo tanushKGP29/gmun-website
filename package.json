@@ -2,7 +2,6 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "homepage": "https://tanushkgp29.github.io/gmun-website/",
   "pkg": {
     "assets": [
       "dist/spa/*"
@@ -19,9 +18,7 @@
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
-    "typecheck": "tsc",
-    "predeploy": "npm run build:client",
-    "deploy": "npm run build && gh-pages -d dist"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@react-three/drei": "^10.1.2",
