@@ -31,6 +31,7 @@ import {
 } from "framer-motion";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { useState, useRef, useEffect } from "react";
+import { HashLink } from 'react-router-hash-link';
 
 
 function AnimatedCounter({
@@ -96,30 +97,30 @@ export default function Index() {
               <span className="text-xl font-bold text-foreground">GMUN</span>
             </motion.div>
             <div className="hidden md:flex items-center space-x-8">
-              <a
-                href="#about"
+              <HashLink
+                smooth to="#about"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 About
-              </a>
-              <a
-                href="events"
+              </HashLink>
+              <HashLink
+                smooth to="#events"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 Events
-              </a>
-              <a
-                href="#conferences"
+              </HashLink>
+              <HashLink
+                smooth to="#conferences"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 Conferences
-              </a>
-              <a
-                href="#testimonials"
+              </HashLink>
+              <HashLink
+                smooth to="#testimonials"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 Testimonials
-              </a>
+              </HashLink>
               <ThemeToggle />
               <Button variant="outline" size="sm">
                 Login
